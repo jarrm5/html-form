@@ -1,0 +1,53 @@
+:root{
+    --bg-primary-color: #F8F9FA;
+    --bg-field-color: #FFC8DD;    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+form {
+    display:grid;
+    grid-template-columns: minmax(400px,70%);
+    justify-content: center;
+    gap: 1rem;
+}
+
+.wrapper-main {
+    background-color:var(--bg-primary-color);
+    margin: 0 auto;
+    width: clamp(500px,80%,1200px);
+    padding: 1rem;
+}
+
+.field {
+    background-color: var(--bg-field-color);
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.field label {
+    white-space: nowrap;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 20%;
+}
+
+.field *:nth-child(2){
+    flex-grow:1;
+}
+
+textarea{
+    resize: horizontal;
+}
