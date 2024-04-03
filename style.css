@@ -36,7 +36,7 @@ form {
     gap: 1rem;
 }
 
-.field label {
+.row label {
     white-space: nowrap;
     display:flex;
     justify-content: flex-end;
@@ -44,7 +44,21 @@ form {
     flex-basis: 20%;
 }
 
-.field *:nth-child(2){
+.column-grid{
+    display:grid;
+    grid-template-columns: repeat(2, calc(50% - 1rem / 2));
+    gap: 1rem;
+}
+
+.column {
+    flex-direction:column;
+}
+
+.column * {
+    flex-basis: 50%;
+}
+
+.row *:nth-child(2){
     flex-grow:1;
 }
 

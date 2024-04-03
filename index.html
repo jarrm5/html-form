@@ -9,31 +9,42 @@
   <body>
     <section class="wrapper-main">
       <form action="example.html" method="get">
-        <div class="field">
+        <div class="field row">
           <label for="firstname">First Name</label>
           <input type="text" id="firstname" name="firstname" placeholder="Enter your name!" />
         </div>
-        <div class="field">
+        <div class="field row">
           <label for="message">Message</label>
           <textarea name="message" id="message" cols="30" rows="10" placeholder="Write a Message..."></textarea>
         </div>
-        <div class="field multiple">
-          <label>Pick your eye Color</label>
-          <input type="radio" name="eye-color" id="eye-color-blue" value="Blue"></input>
-          <label for="eye-color-blue">Blue</label>
-          <input type="radio" name="eye-color" id="eye-color-brown" value="Brown"></input>
-          <label for="eye-color-blue">Brown</label>
-          <input type="radio" name="eye-color" id="eye-color-green" value="Green"></input>
-          <label for="eye-color-blue">Green</label>
+        <div class="column-grid">
+          <div class="field column">
+            <label>Pick your eye Color</label>
+            <input type="radio" name="eye-color" id="eye-color-blue" value="Blue"></input>
+            <label for="eye-color-blue">Blue</label>
+            <input type="radio" name="eye-color" id="eye-color-brown" value="Brown"></input>
+            <label for="eye-color-blue">Brown</label>
+            <input type="radio" name="eye-color" id="eye-color-green" value="Green"></input>
+            <label for="eye-color-blue">Green</label>
+          </div>
+          <div class="field column">
+            <label>What pets do you have</label>
+            <input type="checkbox" name="pet-cat" id="pet-cat" value="Cat"></input>
+            <label for="pet-cat">Cat</label>
+            <input type="checkbox" name="pet-dog" id="pet-dog" value="Dog"></input>
+            <label for="pet-dog">Dog</label>
+            <input type="checkbox" name="pet-bird" id="pet-bird" value="Bird"></input>
+            <label for="pet-bird">Bird</label>
+          </div>
         </div>
-        <div class="field multiple">
-          <label>What pets do you have</label>
-          <input type="checkbox" name="pet-cat" id="pet-cat" value="Cat"></input>
-          <label for="pet-cat">Cat</label>
-          <input type="checkbox" name="pet-dog" id="pet-dog" value="Dog"></input>
-          <label for="pet-dog">Dog</label>
-          <input type="checkbox" name="pet-bird" id="pet-bird" value="Bird"></input>
-          <label for="pet-bird">Bird</label>
+        <div class="field row">
+          <label for="cartype">Cartype</label>
+          <select name="cartype" id="cartype">
+            <option value="none">None</option>
+            <option value="toyota">Toyota</option>
+            <option value="ford">Ford</option>
+            <option value="chevy">Chevy</option>
+          </select>
         </div>
       </form>
     </section>
