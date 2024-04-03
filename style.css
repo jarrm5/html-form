@@ -1,6 +1,8 @@
 :root{
     --bg-primary-color: #F8F9FA;
-    --bg-field-color: #FFC8DD;    
+    --bg-field-color: #FFC8DD;
+
+    --space: 1rem;
 }
 
 * {
@@ -17,23 +19,23 @@ form {
     display:grid;
     grid-template-columns: minmax(400px,70%);
     justify-content: center;
-    gap: 1rem;
+    gap: var(--space);
 }
 
 .wrapper-main {
     background-color:var(--bg-primary-color);
     margin: 0 auto;
     width: clamp(500px,80%,1200px);
-    padding: 1rem;
+    padding: var(--space);
 }
 
 .field {
     background-color: var(--bg-field-color);
     border-radius: 10px;
     font-weight: bold;
-    padding: 1rem;
+    padding: var(--space);
     display: flex;
-    gap: 1rem;
+    gap: var(--space);
 }
 
 .row label {
@@ -44,10 +46,10 @@ form {
     flex-basis: 20%;
 }
 
-.column-grid{
+.two-column-grid{
     display:grid;
-    grid-template-columns: repeat(2, calc(50% - 1rem / 2));
-    gap: 1rem;
+    grid-template-columns: repeat(2, calc(50% - var(--space) / 2));
+    gap: var(--space);
 }
 
 .column {
@@ -56,6 +58,12 @@ form {
 
 .column * {
     flex-basis: 50%;
+}
+
+.column-grid{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    gap: calc(var(--space) / 2);
 }
 
 .row *:nth-child(2){
