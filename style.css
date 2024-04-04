@@ -1,6 +1,8 @@
 :root{
     --bg-primary-color: #F8F9FA;
     --bg-field-color: #FFC8DD;
+    /* --bg-btn-color: hsl(209, 100, 82); */
+    --bg-btn-color: #A2D2FF;
 
     --space: 1rem;
 }
@@ -76,8 +78,7 @@ textarea{
 
 button {
     font-weight:bold;
-    background-color:hsl(240, 100%, 50%);
-    color: white;
+    background-color: var(--bg-btn-color);
     border:none;
     border-radius: 10px;
 }
