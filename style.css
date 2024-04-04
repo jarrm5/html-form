@@ -36,10 +36,14 @@ form {
     padding: var(--space);
     display: flex;
     gap: var(--space);
+    justify-content:center;
+}
+
+label {
+    white-space: nowrap;
 }
 
 .row label {
-    white-space: nowrap;
     display:flex;
     justify-content: flex-end;
     align-items: center;
@@ -56,10 +60,6 @@ form {
     flex-direction:column;
 }
 
-.column * {
-    flex-basis: 50%;
-}
-
 .column-grid{
     display:grid;
     grid-template-columns: 1fr 3fr;
@@ -72,4 +72,21 @@ form {
 
 textarea{
     resize: horizontal;
+}
+
+button {
+    font-weight:bold;
+    background-color:hsl(240, 100%, 50%);
+    color: white;
+    border:none;
+    border-radius: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+input[type="text"],button,textarea,select{
+    padding: calc(var(--space) * 0.75);
 }
