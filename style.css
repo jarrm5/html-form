@@ -85,9 +85,8 @@ button {
 
 button:hover{
     cursor: pointer;
-    /* opacity: 0.75; */
+    opacity: 0.75;
     /* opacity: 0.90; */
-    opacity: 0.80;
 }
 
 input[type="text"],button,textarea,select{
