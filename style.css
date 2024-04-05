@@ -24,7 +24,7 @@ body{
 
 form {
     display:grid;
-    grid-template-columns: minmax(400px,70%);
+    /* grid-template-columns: minmax(400px,70%); */
     justify-content: center;
     gap: var(--space);
 }
@@ -32,7 +32,8 @@ form {
 .wrapper-main {
     background-color:var(--bg-primary-color);
     /* margin: 0 auto; */
-    width: clamp(500px,80%,1200px);
+    /* width: clamp(500px,80%,1200px); */
+    width: min(90%,700px);
     padding: var(--space);
 }
 
