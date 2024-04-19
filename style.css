@@ -30,8 +30,8 @@ form {
 }
 
 .wrapper-main {
-    /* background-color:var(--bg-primary-color); */
-    background-color:blue;
+    background-color:var(--bg-primary-color);
+    /* background-color:blue; */
     /* margin: 0 auto; */
     /* width: clamp(500px,80%,1200px); */
     width: min(90%,700px);
